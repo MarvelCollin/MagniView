@@ -1,2 +1,4 @@
-@import url('src/components/menus/dropdown.css');
-@import url('src/components/colors/colors.css');
+@import url("src/flex.css");
+@import url("src/keyframes.css");
+@import url("src/layout.css");
+@import url("src/spacing-sizing.css");
