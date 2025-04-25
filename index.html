@@ -3,17 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Component</title>
-    <link rel="stylesheet" href="magniview.css  ">
+    <title>MagniView - Utility CSS Framework</title>
+    <link rel="stylesheet" href="magniview.css">
 </head>
-<body>
-    <div class="dropdown">
-        <button class="dropdown-btn">Dropdown Menu</button>
-        <div class="dropdown-content">
-            <a href="#" class="dropdown__item">Link 1</a>
-            <a href="#" class="dropdown__item">Link 2</a>
-            <a href="#" class="dropdown__item">Link 3</a>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="text-3xl font-bold">MagniView</h1>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#features" class="hover:text-blue-200">Features</a></li>
+                        <li><a href="#components" class="hover:text-blue-200">Components</a></li>
+                        <li><a href="#utilities" class="hover:text-blue-200">Utilities</a></li>
+                        <li><a href="https://github.com/yourusername/magniview" class="hover:text-blue-200">GitHub</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="bg-blue-700 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-6">A Tailwind-inspired CSS Framework</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">MagniView is a lightweight utility-first CSS framework that helps you build modern websites without writing custom CSS.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#getting-started" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50">Get Started</a>
+                <a href="#docs" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600">Documentation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features section -->
+    <section id="features" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">🎨</div>
+                    <h3 class="text-xl font-semibold mb-2">Utility-First</h3>
+                    <p class="text-gray-600">Build custom designs without ever leaving your HTML using utility classes.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-semibold mb-2">Responsive</h3>
+                    <p class="text-gray-600">Fully responsive design system with breakpoint-specific variants like sm:, md:, and lg:.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold mb-2">Lightweight</h3>
+                    <p class="text-gray-600">No JavaScript, no dependencies, just pure vanilla CSS that works in all modern browsers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components section -->
+    <section id="components" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Component Examples</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Card Component -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Card Component</h3>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://via.placeholder.com/600x300" alt="Placeholder" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-xl font-semibold mb-2">Card Title</h4>
+                            <p class="text-gray-600 mb-4">This is a simple card component built with MagniView utility classes.</p>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Alert Component -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Alert Component</h3>
+                    
+                    <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
+                        <div class="flex items-center">
+                            <div class="text-lg font-semibold mr-2">Success!</div>
+                            <p>Your action was completed successfully.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4">
+                        <div class="flex items-center">
+                            <div class="text-lg font-semibold mr-2">Error!</div>
+                            <p>There was a problem with your submission.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4">
+                        <div class="flex items-center">
+                            <div class="text-lg font-semibold mr-2">Info!</div>
+                            <p>Here's some information you should know.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started section -->
+    <section id="getting-started" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Getting Started</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Installation</h3>
+                    <p class="mb-4">Simply include the MagniView CSS file in your HTML:</p>
+                    
+                    <pre class="bg-gray-800 text-white p-4 rounded mb-6 overflow-x-auto"><code>&lt;link rel="stylesheet" href="magniview.css"&gt;</code></pre>
+                    
+                    <h3 class="text-xl font-semibold mb-4">Usage</h3>
+                    <p class="mb-4">Start using MagniView's utility classes in your HTML:</p>
+                    
+                    <pre class="bg-gray-800 text-white p-4 rounded overflow-x-auto"><code>&lt;div class="flex items-center justify-between p-4 bg-blue-500 text-white"&gt;
+  &lt;h1 class="text-2xl font-bold"&gt;MagniView Demo&lt;/h1&gt;
+  &lt;button class="bg-white text-blue-500 px-4 py-2 rounded"&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">MagniView</h3>
+                    <p class="mb-4">A lightweight utility-first CSS framework inspired by Tailwind CSS.</p>
+                    <p>&copy; 2023 MagniView. All rights reserved.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-300">Documentation</a></li>
+                        <li><a href="#" class="hover:text-blue-300">GitHub</a></li>
+                        <li><a href="#" class="hover:text-blue-300">npm Package</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-blue-300">Twitter</a></li>
+                        <li><a href="#" class="hover:text-blue-300">Discord</a></li>
+                        <li><a href="#" class="hover:text-blue-300">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
